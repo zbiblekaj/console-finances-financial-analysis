@@ -94,7 +94,7 @@ console.log('-----------------------------------------------------');
 
 // calculate the total number of months for the period.
 var totalMonths = finances.length;
-  console.log('Total months for the period: ' + totalMonths);
+  console.log('Total months: ' + totalMonths);
 
 
 // calculate the total number of profit & losses for the period.
@@ -103,7 +103,7 @@ function sumArrayFigures(finances) {
   for (var i = 0; i < finances.length; i++){
     totalPL += finances[i][1];
   }
-  console.log('Total amount of Profit/Losses for the period: ' + totalPL);
+  console.log('Total amount of Profit/Losses: ' + totalPL);
   return totalPL;
 }
 sumArrayFigures(finances);
@@ -123,7 +123,7 @@ for (let i = 0; i < change.length; i++) {
 
 totalAverage = totalAverage/(finances.length - 1);
 
-console.log ('The average of the total changes in Profit/Losses for the period: ' + totalAverage.toFixed(0));
+console.log ('The average of the total changes in Profit/Losses: ' + totalAverage.toFixed(0));
 Number(-2315.12.toFixed(0));
 
 // calculate the greatest increase in profits
@@ -135,3 +135,5 @@ console.log ('The greatest increase in profits: ' + monthIncrease);
 let greatestDecrease = Math.min(...change);
 let monthDecrease = finances[change.indexOf(greatestDecrease) +1][0];
 console.log ('The greatest decrease in profits: ' + monthDecrease);
+
+
