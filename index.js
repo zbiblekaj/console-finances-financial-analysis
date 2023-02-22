@@ -128,12 +128,12 @@ Number(-2315.12.toFixed(0));
 
 // calculate the greatest increase in profits
 let greatestIncrease = Math.max(...change);
-let monthIncrease = finances[change.indexOf(greatestIncrease) +1][0];
+let monthIncrease = finances[change.indexOf(greatestIncrease) +1];
 console.log ('The greatest increase in profits: ' + monthIncrease);
 
 // calculate the decrease in profits
 let greatestDecrease = Math.min(...change);
-let monthDecrease = finances[change.indexOf(greatestDecrease) +1][0];
+let monthDecrease = finances[change.indexOf(greatestDecrease) +1];
 console.log ('The greatest decrease in profits: ' + monthDecrease);
 
 

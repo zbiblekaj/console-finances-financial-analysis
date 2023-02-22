@@ -16,8 +16,7 @@ Please see a screenshot of the report below:
 ![readme-screenshot-image](./assets/Images/SC%20Console%20Log.png)
 
 Below is a link to the webpage holding the report: 
-
-
+https://zbiblekaj.github.io/console-finances-financial-analysis/
 
 Credits: Ask BCS Learning Assistant
 
