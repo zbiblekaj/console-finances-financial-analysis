@@ -113,20 +113,25 @@ var change = [];
 var totalAverage = 0;
 
 for (var i = 1; i < finances.length; i++) {
-  var change = finances[i][1] - finances[i - 1][1];
-  change.push(change);
+  var oneChange = finances[i][1] - finances[i - 1][1];
+  change.push(oneChange);
 }
 
 for (let i = 0; i < change.length; i++) {
-  totalAverage += change [i];
+  totalAverage += change[i];
 }
-
 
 totalAverage = totalAverage/(finances.length - 1);
 
-console.log ('The average of the total changes in Profit/Losses for the period: ' + average.toFixed(2));
+console.log ('The average of the total changes in Profit/Losses for the period: ' + totalAverage.toFixed(0));
+Number(-2315.12.toFixed(0));
 
-// using the toFixed element, this displays a string of the number. 
-//I need to change this to an actual number using the following: 
-// Number(35673.toFixed(*decimal place here*))
+// calculate the greatest increase in profits
+let greatestIncrease = Math.max(...change);
+let monthIncrease = finances[change.indexOf(greatestIncrease) +1][0];
+console.log ('The greatest increase in profits: ' + monthIncrease);
 
+// calculate the decrease in profits
+let greatestDecrease = Math.min(...change);
+let monthDecrease = finances[change.indexOf(greatestDecrease) +1][0];
+console.log ('The greatest decrease in profits: ' + monthDecrease);
