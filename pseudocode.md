@@ -1,6 +1,10 @@
 Pseudocode for console finances: 
 
-- Calculate the total number of months included in the data set.
+Calculate the total number of months included in the data set.
+- Initialize a variable for the total number of months
+- 
+
+
 Add the total amount of months for the period using the .legnth function.
 
 - Calculate the net total amount of Profit/Losses for the entire period. 
