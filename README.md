@@ -3,6 +3,7 @@
 Welcome to my latest JavaScript project where I will be analyzing financial data for Console Finances. 
 
 I have been given a dataset composed of two fields: Date and Profit/Losses. My task is to write JavaScript code that will analyze the records to calculate several key financial metrics including:
+
 - The total number of months included in the dataset. 
 - The net total amount of Profit/Losses over the entire period. 
 - Average changes in Profit/Losses over the entire period by tracking what the total change in profits is from month to month and finding the average.
@@ -12,5 +13,11 @@ My goal is to create a robust financial analysis tool that can be used to make d
 
 Please see a screenshot of the report below: 
 
+![readme-screenshot-image](./assets/Images/SC%20Console%20Log.png)
 
 Below is a link to the webpage holding the report: 
+
+
+
+Credits: Ask BCS Learning Assistant
+
