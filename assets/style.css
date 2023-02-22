@@ -1,9 +1,9 @@
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: aqua;
 }
 
 h1 {
-    letter-spacing: 20px;
+    letter-spacing: 5px;
+    font-weight: lighter;
+    border-bottom: 5px solid rgb(94, 0, 0);
 }
-
