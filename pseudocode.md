@@ -1,13 +1,22 @@
 Pseudocode for console finances: 
 
-Calculate the total number of months included in the data set.
-- Initialize a variable for the total number of months
-- 
+1. create a header for the console log before beginning calculations 
+- console log the title you would like
+- console log underscore so that there is a seperation between the title and calculations.
 
+2. calculate the total number of months included in the data set: add the total amount of months for the period.
+- initialize a variable for the total number of months
+- create a for loop to add the total amount of months 
+- console log the total months 
 
-Add the total amount of months for the period using the .legnth function.
+3. calculate the total amount of profit/losses for the entire period: add the total amount of figures for the period.
+- initialize a variable for the total amount of profit & losses
+- initialize a function to sum the total amount of figures
+- within the function, use a for loop to define the figures needed to be summed 
+- console log the total amounts.
 
-- Calculate the net total amount of Profit/Losses for the entire period. 
+4. 
+
 Add the total amount of figures for the period using a for loop & a function. 
 
 - Calculate the average of the changes in profile/lossess over the entire period.

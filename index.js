@@ -92,14 +92,12 @@ const finances = [
 console.log('Console Finances: financial analysis for period January 2010 - February 2017')
 console.log('-----------------------------------------------------');
 
-// calculate the total number of months for the period
+// calculate the total number of months for the period.
 var totalMonths = finances.length;
-for (var i = 0; i < totalMonths; i++) {
-  console.log('Total months for the period: ' + totalMonths[i]);
-}
+  console.log('Total months for the period: ' + totalMonths);
 
-// calculate the total number of profit & losses for the period
 
+// calculate the total number of profit & losses for the period.
 function sumArrayFigures(finances) {
   var totalPL = 0;
   for (var i = 0; i < finances.length; i++){
@@ -111,10 +109,24 @@ function sumArrayFigures(finances) {
 sumArrayFigures(finances);
 
 // calculate the average of the changes in profile/lossess over the entire period.
+var change = [];
+var totalAverage = 0;
 
-function findAverage(finances){
-  var average= 0;
-  for (let i=0; i < finances.length; i ++){
-    
-  }
+for (var i = 1; i < finances.length; i++) {
+  var change = finances[i][1] - finances[i - 1][1];
+  change.push(change);
 }
+
+for (let i = 0; i < change.length; i++) {
+  totalAverage += change [i];
+}
+
+
+totalAverage = totalAverage/(finances.length - 1);
+
+console.log ('The average of the total changes in Profit/Losses for the period: ' + average.toFixed(2));
+
+// using the toFixed element, this displays a string of the number. 
+//I need to change this to an actual number using the following: 
+// Number(35673.toFixed(*decimal place here*))
+
