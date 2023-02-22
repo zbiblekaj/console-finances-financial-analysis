@@ -93,18 +93,28 @@ console.log('Console Finances: financial analysis for period January 2010 - Febr
 console.log('-----------------------------------------------------');
 
 // calculate the total number of months for the period
-console.log('Total months for the period: ' + finances.length);
+var totalMonths = finances.length;
+for (var i = 0; i < totalMonths; i++) {
+  console.log('Total months for the period: ' + totalMonths[i]);
+}
 
 // calculate the total number of profit & losses for the period
 
-function sumArray(finances) {
-  var totalPl = 0;
+function sumArrayFigures(finances) {
+  var totalPL = 0;
   for (var i = 0; i < finances.length; i++){
-    totalPl += finances[i][1];
+    totalPL += finances[i][1];
   }
+  console.log('Total amount of Profit/Losses for the period: ' + totalPL);
   return totalPL;
 }
-console.log('Total amount of Profit/Losses for the period ' + totalPL);
+sumArrayFigures(finances);
 
 // calculate the average of the changes in profile/lossess over the entire period.
 
+function findAverage(finances){
+  var average= 0;
+  for (let i=0; i < finances.length; i ++){
+    
+  }
+}
