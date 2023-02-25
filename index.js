@@ -98,15 +98,15 @@ var totalMonths = finances.length;
 
 
 // calculate the total number of profit & losses for the period.
-function sumArrayFigures(finances) {
-  var totalPL = 0;
+var totalPL = 0;
+function sum(finances) {
   for (var i = 0; i < finances.length; i++){
     totalPL += finances[i][1];
   }
   console.log('Total amount of Profit/Losses: ' + totalPL);
   return totalPL;
 }
-sumArrayFigures(finances);
+sum(finances);
 
 // calculate the average of the changes in profile/lossess over the entire period.
 var change = [];
