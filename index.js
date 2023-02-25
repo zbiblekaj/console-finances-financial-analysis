@@ -98,8 +98,9 @@ var totalMonths = finances.length;
 
 
 // calculate the total number of profit & losses for the period.
-var totalPL = 0;
+
 function sum(finances) {
+  var totalPL = 0;
   for (var i = 0; i < finances.length; i++){
     totalPL += finances[i][1];
   }
